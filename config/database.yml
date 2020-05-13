@@ -49,7 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: myapp-space_production
+  # database: myapp-space_production
   username: myapp-space
   password: <%= ENV['MYAPP-SPACE_DATABASE_PASSWORD'] %>
   adapter: postgresql

@@ -1,0 +1,46 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    -# = link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet"
+    %title MyspAce
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+  %body
+    %header
+      .header__title
+        = link_to "MyspAce" , root_path, class: "header-title--text"
+        .menu
+          %ul.nav
+            %li
+              %a{:href => "#"} Calendar
+              %ul
+                %li
+                  %a{:href => "/users/:user_id/events"} Calendar
+                %li
+                  %a{:href => "#"} b1
+                  
+            %li
+              %a{:href => "#"} About
+              %ul
+                %li
+                  %a{:href => "#"} Contact
+                %li
+                  %a{:href => "#"} c1
+            %li
+              %a{:href => "#"} Works
+              %ul
+                %li
+                  %a{:href => "/users/:id"} My-page
+                %li
+                  %a{:href => "#"} info
+                 
+                    
+  
+
+       
+    = yield
+    .footer
+      Creative of myspAce film.

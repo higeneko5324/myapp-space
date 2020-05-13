@@ -1,0 +1,22 @@
+.post-title
+  .post-name
+    List of posts page by :
+    = current_user.name 
+    .post-backbtn
+    = link_to "back to post", new_post_path, class: "back-btn" 
+  .post-content
+    - @posts.each do |post|
+      .content
+        .content__left
+          .content__left__text
+            = link_to post_path(post.id), class: "content__right__top--title" do
+              = post.text 
+              .content__left__text__content
+              content :
+              = post.content
+          .content__left__bottom
+            .content__left__bottom__date
+              = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
+            .post-btn
+              - if current_user.id == post.user_id
+                = link_to "Delete", post_path(post.id), method: :delete, class: "delete-btn" 

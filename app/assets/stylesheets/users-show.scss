@@ -1,0 +1,39 @@
+.post-title{
+  background-image: url(https://images.unsplash.com/photo-1498709112912-9be3173d30be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
+  background-size: cover;
+  background-position: center;
+  color: #eeeeee;
+  font-family: 'Caveat', cursive;  
+  height: 100vh;
+  padding: 50px;
+  overflow: scroll;
+  .post-name{ 
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    
+  }
+      .back-btn:hover{
+        text-shadow: 0 0 10px #ffa201;
+        border-bottom: solid 1px #ffa201;
+      }
+  .post-content{
+    
+    .content{
+     padding: 30px 100px;
+     &__left{
+       display: flex;
+       justify-content: space-between;
+       &__text{
+        font-size: 30px;
+         &__content{
+           margin-top: 10px;
+          }
+        }
+        &__bottom{
+          
+        }
+      } 
+    } 
+  }
+}

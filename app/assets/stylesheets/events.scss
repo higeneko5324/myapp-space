@@ -1,0 +1,37 @@
+.calendar-index{
+  .fc-ltr {
+    padding: 70px 30px;
+}
+#calendar {
+  font-family: 'Caveat', cursive;  
+
+  // margin: 0 auto;
+  // width: 700px;
+  // text-align: center;
+  // position: fixed;
+  // top: 90px;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  .fc-state-disabled{
+    font-family: 'Caveat', cursive;  
+  }
+  .fc-state-active{
+    font-family: 'Caveat', cursive;  
+  }
+  .fc-corner-right{
+    font-family: 'Caveat', cursive;  
+  }
+  .fc-center{
+    // color: white;
+    font-size: 50px;
+  }
+  .fc-view-container{
+    // color: white;
+    font-size: 20px;
+  }
+  .fc-today{
+    background-color: orange;
+  }
+ }
+}

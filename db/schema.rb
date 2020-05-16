@@ -35,9 +35,10 @@ ActiveRecord::Schema.define(version: 2020_05_03_111758) do
     t.text "text"
     t.text "content"
     t.string "image"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "shows", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -65,5 +66,6 @@ ActiveRecord::Schema.define(version: 2020_05_03_111758) do
   end
 
   add_foreign_key "events", "users"
+  add_foreign_key "posts", "users"
   add_foreign_key "shows", "posts"
 end

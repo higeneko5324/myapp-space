@@ -1,9 +1,9 @@
 .post-show  
   .post-show-list
     .post-btn
+      = link_to "back", new_post_path, class: "back-btn" 
       - if current_user.id == @post.user_id
         = link_to "Delete", post_path(@post.id), method: :delete, class: "delete-btn" 
-        = link_to "back", new_post_path, class: "back-btn" 
     .posts-show-day
       = @post.created_at.strftime("%Y年%m月%d日 %H時%M分")
     .posts-show-text
@@ -15,12 +15,14 @@
       %h4 ＜Comments all＞
       - if @comments
         - @comments.each do |comment|
-          .comment
-            = link_to comment.user.name, "/users/#{comment.user_id}"
-            ：
-            = comment.text
-        - if current_user.id == @comment.user_id
-          = link_to "Delete", post_comment_path(@post.comments.ids), method: :delete, class: "delete-btn" 
+          .comments-list
+            .comment
+              = link_to comment.user.name, "/users/#{comment.user_id}"
+              ：
+              = comment.text
+            .delete-btn
+              - if current_user.id == comment.user_id
+                = link_to "Delete", post_comment_path(@post.comments.ids), method: :delete
 
 
 

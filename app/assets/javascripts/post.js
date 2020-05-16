@@ -2,8 +2,7 @@ $(function(){
   function buildHTML(post){  
     var html = `<div class="main-list">
                   <div class="main-list__text">
-                    text : ${post.text}
-                    
+                    text : ${post.text} 
                   </div>
                   <div class="main-list__content">
                     content : ${post.content}

@@ -3,13 +3,14 @@
     = post.user.name
   .main-list__text
     = link_to post_path(post.id) do
-      text :
-      = post.text
-    - if current_user.id == post.user_id
-      = link_to "Delete", post_path(post.id), method: :delete, class: "delete-btn" 
-    .main-list__content
-      content :
-      = post.content
+      .main-list__text__form
+        text :
+        = post.text
+      .main-list__content
+        content :
+        = post.content
   .main-list__day
     = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
+    - if current_user.id == post.user_id
+      = link_to "Delete", post_path(post.id), method: :delete, class: "delete-btn" 
   

@@ -207,13 +207,9 @@ header {
           margin-left: 70px;
           border-bottom: solid lightblue;
           font-size: 30px;
-
         }
-
       }
     }
-
-
       &__list{
         width: 300px;
         height: 200px; 
@@ -266,7 +262,7 @@ header {
         }
       }
     .main{
-      padding-right: 50px;
+      padding: 0 50px;
       width: calc(100% / 2);
       background-color: rgba(0, 0, 0, 0.30);
       overflow: scroll;
@@ -274,18 +270,25 @@ header {
         padding-top: 50px;
         color: #eeeeee;
         font-family: 'Raleway', sans-serif;
+        .main-list__text:hover{
+          box-shadow: 0 0 10px #ffa201;
+
+        }
         .main-list-user{
           font-family: 'Caveat', cursive;  
           font-size: 15px;
-          border-bottom: orange solid 1px;
         }
         .delete-btn{
           float: right;
-          // border: white solid 1px;
           padding: 3px;
           margin-left: 5px;
           font-size: 3px;
           font-family: 'Caveat', cursive;  
+        }
+        .delete-btn:hover{
+          text-shadow: 0 0 10px #ffa201;
+        border-bottom: solid 1px #ffa201;
+
         }
         
       &__day{
@@ -303,17 +306,9 @@ header {
       padding: 20px 25px 0 0;
       .right__lists{
         overflow: scroll;
+        
         #calendar {
           font-family: 'Caveat', cursive;  
-
-          // margin: 0 auto;
-          // width: 700px;
-          // text-align: center;
-          // position: fixed;
-          // top: 90px;
-          // bottom: 0;
-          // left: 0;
-          // right: 0;
           .fc-state-disabled{
             font-family: 'Caveat', cursive;  
           }

@@ -129,10 +129,6 @@ header {
   // }
 
   .top-page {
-    // height: 600px;
-    background-image: url(https://images.unsplash.com/photo-1438804339156-c72cb5183686?ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80);
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,7 +324,7 @@ header {
           .fc-today{
             background-color: orange;
           }
-         }
+        }
       }
     }
   }

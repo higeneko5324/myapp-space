@@ -42,11 +42,17 @@ Things you may want to cover:
     https://i.gyazo.com/7361cc286416d59e8cb4aabc2d094862.mp4
 
 * 今後改善しないといけない実装内容
-  ・メッセージの非同期通信が、使いずらい為、最新順の表示に変える
+  ・メッセージの非同期通信が使用しずらい為、最新順の表示に変える
 
 * 開発環境の記載
-  例): AWSなど使用している物を記載。
+  例): herokuを使用してデプロイ。
 
-* Deployment instructions
+* テストアカウント
+name : test1
+mail : test1@gmail.com
+
+* 本番環境URL
+https://myapp-space.herokuapp.com/
+
 
 * ...

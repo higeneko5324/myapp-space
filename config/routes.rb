@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments, only: [:create, :destroy]
     end
+  resources :blogs
   resources :users, only: [:show, :edit, :update] do
     resources :events 
-    
       end
     end

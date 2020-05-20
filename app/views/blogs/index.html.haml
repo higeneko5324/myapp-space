@@ -1,12 +1,14 @@
 .blog-list
+  .blog-create
+    = link_to "junp to Create Blog", new_blog_path
   - @blogs.each do |blog|
     .content
-      .content__left
-        .content__left--image
-          ここに四角を入れる
-      .content__right
-        .content__right__top
-          = blog.title
-        .content__right__bottom
-          .content__right__bottom--date
-            = blog.created_at.strftime("%Y年%m月%d日 %H時%M分")
+      = link_to blog_path(blog.id), class: "lists" do
+        .content__left
+          .content__left--image
+        .content__right
+          .content__right__top
+            = blog.title
+          .content__right__bottom
+            .content__right__bottom--date
+              = blog.created_at.strftime("%Y年%m月%d日 %H時%M分")

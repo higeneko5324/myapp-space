@@ -12,7 +12,9 @@ Things you may want to cover:
   ・ユーザーログイン、新規登録機能(devise使用)
   ・コメント機能実装、コメント削除
   ・カレンダー表示(gem fullcalendar使用)
-  ・ユーザーマイページ機能(infoを表示)
+  ・ユーザーマイページ機能(投稿一覧表示)
+  ・ブログ投稿機能実装
+  ・ブログ投稿一覧表示
 
 * 追加機能、実装予定
   。写真投稿機能
@@ -45,11 +47,13 @@ Things you may want to cover:
   ・メッセージの非同期通信が使用しずらい為、最新順の表示に変える
 
 * 開発環境の記載
-  例): herokuを使用してデプロイ。
+  Ruby on Railsを使用して開発
+  Database: MySQL
+  herokuを使用してデプロイ
 
 * テストアカウント
-name : test1
 mail : test1@gmail.com
+password : test1234
 
 * 本番環境URL
 https://myapp-space.herokuapp.com/

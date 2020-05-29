@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all
-    @blogs = Blog.includes(:user)
+    # @blogs = Blog.includes(:user)
   end
 
   def new

@@ -23,10 +23,11 @@
       align-items: center;
       display: flex;
       .content__left--image{
-        height: 35px;
-        width: 35px;
+        // height: 50px;
+        // width: 50px;
         border: solid 1px#eee;
         margin-right: 10px;
+        padding: 10px;
       }  
     }
   }
@@ -39,7 +40,6 @@
    
   }
 }
-
 .new-blog{
   background-image: url('/images/photo-1473186505569-9c61870c11f9.jpg');
   background-size: cover;
@@ -80,7 +80,6 @@
     }
   }
 }
-
 .blog-show{
   background-image: url('/images/photo-1573390609456-919e3ed0da7e.jpg');
   background-size: cover;
@@ -99,16 +98,32 @@
   .blog-date{
     margin-bottom: 10px;
     font-family: 'Caveat', cursive;  
-    // .blog-edit-btn{
-    //   margin-left: 10px;
-    // }
-    // .blog-delete-btn{
-    //   margin-left: 10px;
-    // }
+    .blog-back-btn{
+      margin-left: 10px;
+      font-size: 23px;
+    }
+    .blog-edit-btn{
+      margin-left: 10px;
+      font-size: 23px;
+    }
+    .blog-delete-btn{
+      margin-left: 10px;
+      font-size: 23px;
+    }
+    .blog-back-btn:hover{
+      text-shadow: 0 0 10px #ffa201;
+      border-bottom: solid 1px #ffa201;
+    }
+    .blog-edit-btn:hover{
+      text-shadow: 0 0 10px #ffa201;
+      border-bottom: solid 1px #ffa201;
+    }
+    .blog-delete-btn:hover{
+      text-shadow: 0 0 10px #ffa201;
+      border-bottom: solid 1px #ffa201;
+    }
   }
   .blog-author{
     margin-top: 30px;
   }
-  
-
 }

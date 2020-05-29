@@ -115,62 +115,105 @@ header {
   }
 }
 }
-
   a {
     text-decoration: none;
     color: #fff;
   }
-
-  // .header-links {
-  //   list-style: none;
-  //   display: flex;
-    
-   
-  // }
-
   .top-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     position: relative;
     .content__box__video{
     width: 1440px;
     }
   }
+  .start-btn{
+    display: flex;
+    justify-content: space-between;
 
-  .top-btn {
-    display: inline-block;
-    width: 240px;
-    // padding: 10px 0;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #ffa201;
-    margin-top: 40px;
-    border-radius: 27px;
-    font-family: 'Caveat', cursive; 
-    font-size: 50px; 
-    position: absolute;
-    bottom: 200px; 
-    animation: fadeIn 10s ease 1 normal;
-   
-  }
+    .top-btn {    
+      width: 240px;
+      text-align: center;
+      font-size: 10px;
+      color: #fff;
+      text-decoration: none;
+      // background-color: #ffa201;
+      margin-top: 40px;
+      border-radius: 27px;
+      font-family: 'Caveat', cursive; 
+      font-size: 50px; 
+      position: absolute;
+      bottom: 200px; 
+      left: 350px;
+      animation: fadeIn 10s ease 1 normal;
+    }
     @keyframes fadeIn {
       0% {opacity: 0;}
-
+      
       75% {opacity: 0.5;}
-
+      
       100% {opacity: 1;}
     }
-
-  .top-btn:hover {
-    box-shadow: 0 0 10px #ffa201;
     
-  }
-
-
+    .top-btn:hover {
+      box-shadow: 0 0 10px #ffa201; 
+    }
+    
+    .top-blog-btn {
+      // display: inline-block;
+      width: 240px;
+      // padding: 10px 0;
+      text-align: center;
+      font-size: 10px;
+      color: #fff;
+      text-decoration: none;
+      // background-color:lightblue;
+      margin-top: 40px;
+      border-radius: 27px;
+      font-family: 'Caveat', cursive; 
+      font-size: 50px; 
+      position: absolute;
+      bottom: 200px; 
+      right: 360px;
+      animation: fadeIn 10s ease 1 normal;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      
+      75% {opacity: 0.5;}
+      
+      100% {opacity: 1;}
+    }
+    
+    .top-blog-btn:hover {
+      box-shadow: 0 0 10px lightblue; 
+    }
+    .center-btn {    
+      width: 240px;
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+      // background-color: khaki;
+      margin-top: 40px;
+      border-radius: 27px;
+      font-family: 'Caveat', cursive; 
+      font-size: 50px; 
+      position: absolute;
+      bottom: 200px; 
+      left: 600px;
+      animation: fadeIn 10s ease 1 normal;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      
+      75% {opacity: 0.5;}
+      
+      100% {opacity: 1;}
+    }
+    
+    .center-btn:hover {
+      box-shadow: 0 0 10px khaki; 
+    }  
+  } 
   .contents{
     padding: 60px 55px;
     height: 100vh;
@@ -179,7 +222,6 @@ header {
     background-image: url('/images/photo-1542728143-d9b537db6433.jpg');
     background-size: cover;
     background-position: center;
-
     .left{
       padding-top: 20px;
       width: calc(100% / 2);  

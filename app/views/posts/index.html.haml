@@ -1,8 +1,14 @@
 .top-page
   = video_tag("/videos/video.mp4", autoplay: true, loop: true, muted: true, class: 'content__box__video')
 
-  -if user_signed_in?
-    %a.top-btn{:href => "/posts/new"}
-      welCome 
+  .start-btn
+    .top-blog-btn
+      = link_to "blogs", blogs_path
+    .top-btn
+      = link_to "posts", new_post_path
+    .center-btn
+      = link_to "WelCom", user_path(current_user.id)
+  
+
   
   

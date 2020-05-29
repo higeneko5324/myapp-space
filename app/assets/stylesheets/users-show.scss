@@ -6,32 +6,74 @@
   font-family: 'Caveat', cursive;  
   height: 100vh;
   padding: 50px;
-  overflow: scroll;
+  width: 100%;
   .post-name{ 
     text-align: center;
     font-size: 30px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 20px;
+  }
+  .post-blog-btn{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+
   }
       .back-btn:hover{
         text-shadow: 0 0 10px #ffa201;
         border-bottom: solid 1px #ffa201;
       }
-  .post-content{
-    .content{
-     padding: 30px 100px;
-     &__left{
-       display: flex;
-       justify-content: space-between;
-       &__text{
-        font-size: 30px;
-         &__content{
-           margin-top: 10px;
+      .blogs-btn:hover{
+        text-shadow: 0 0 10px lightblue;
+        border-bottom: solid 1px lightblue;
+      }
+  .blog-post{
+    display: flex;
+    justify-content: space-between;
+    .post-content{
+      padding: 20px 50px;
+      overflow: scroll;
+      width: calc(100% / 2);
+      .content{
+      //  padding: 30px 20px 0 100px;
+       &__left{
+         display: flex;
+         justify-content: space-between;
+         &__text{
+          font-size: 30px;
+           &__content{
+             margin-top: 10px;
+            }
           }
-        }
-        &__bottom{ 
-        }
+        } 
       } 
-    } 
+      .content__left:hover{
+        text-shadow: 0 0 10px #ffa201;
+        border-bottom: solid 1px #ffa201;
+      }
+    }
+    .blog-content{
+      padding: 20px 50px;
+      overflow: scroll;
+      width: calc(100% / 2);
+      .content{
+        // padding: 30px 100px 0 20px;
+        &__right{
+          display: flex;
+          justify-content: space-between;
+          &__text{
+           font-size: 30px;
+            &__content{
+              margin-top: 10px;
+             }
+           }
+         } 
+       } 
+       .content__right:hover{
+         text-shadow: 0 0 10px lightblue;
+         border-bottom: solid 1px lightblue;
+       }
+    }
   }
 }

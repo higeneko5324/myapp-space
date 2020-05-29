@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   def show
     @user = current_user.name
     @posts = current_user.posts
+    @blogs = current_user.blogs
   end
 
   def user_params

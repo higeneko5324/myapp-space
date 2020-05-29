@@ -6,6 +6,7 @@
       = link_to blog_path(blog.id), class: "lists" do
         .content__left
           .content__left--image
+            = blog.user.name
         .content__right
           .content__right__top
             = blog.title

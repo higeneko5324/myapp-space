@@ -1,22 +1,42 @@
 .post-title
   .post-name
-    List of posts page by :
     = current_user.name 
+    's my-page
+  .post-blog-btn
     .post-backbtn
-    = link_to "back to post", new_post_path, class: "back-btn" 
-  .post-content
-    - @posts.each do |post|
-      .content
-        .content__left
-          .content__left__text
-            = link_to post_path(post.id), class: "content__right__top--title" do
-              = post.text 
-              .content__left__text__content
-              content :
-              = post.content
-          .content__left__bottom
-            .content__left__bottom__date
-              = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
-            .post-btn
-              - if current_user.id == post.user_id
-                = link_to "Delete", post_path(post.id), method: :delete, class: "delete-btn" 
+    = link_to "Posts", new_post_path, class: "back-btn" 
+    .blog-backbtn
+    = link_to "Blogs", blogs_path, class: "blogs-btn" 
+  .blog-post
+    .post-content
+      - @posts.each do |post|
+        .content
+          .content__left
+            .content__left__text
+              = link_to post_path(post.id), class: "content__right__top--title" do
+                title :
+                = post.text 
+                .content__left__text__content
+                content :
+                = post.content
+            .content__left__bottom
+              .content__left__bottom__date
+                = post.created_at.strftime("%Y年%m月%d日 %H時%M分")
+              .post-btn
+                - if current_user.id == post.user_id
+                  = link_to "Delete", post_path(post.id), method: :delete, class: "delete-btn" 
+    .blog-content
+      - @blogs.each do |blog|
+        .content
+          .content__right
+            .content__right__text
+              = link_to blog_path(blog.id), class: "content__right__top--title" do
+                title :
+                = blog.title 
+                .content__right__text__content
+            .content__right__bottom
+              .content__right__bottom__date
+                = blog.created_at.strftime("%Y年%m月%d日 %H時%M分")
+              .post-btn
+                - if current_user.id == blog.user_id
+                  = link_to "Delete", blog_path(blog.id), method: :delete, class: "delete-btn" 
